@@ -1,0 +1,9 @@
+<h2>Movies</h2>
+
+<ul>
+  <li ng-repeat="movie in controller.movies">
+    {{movie.title}}
+    <a href="/edit/{{movie._id}}">edit</a>
+    <a href="#" ng-click="controller.deleteMovie(movie._id)">delete</a>
+  </li>
+</ul>
